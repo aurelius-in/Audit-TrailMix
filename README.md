@@ -1,4 +1,9 @@
-# Audit TrailMix
+<p align="center">
+  <img src="./audit_trailmix.png" alt="Audit TrailMix" width="200"/>
+  <img src="./audit_trailmix_black.png" alt="Audit TrailMix Black" width="200"/>
+  <img src="./audit_trailmix_cordovan.png" alt="Audit TrailMix Cordovan" width="200"/>
+  <img src="./audit_trailmix_white.png" alt="Audit TrailMix White" width="200"/>
+</p>
 
 # *Receipts for every AI decision.*
 ##### Audit TrailMix is a drop-in SDK and control plane that records each agent and LLM call, enforces policy at runtime, and exports signed evidence packs for audits, incidents, and regulators.
