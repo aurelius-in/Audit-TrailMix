@@ -74,14 +74,15 @@ flowchart LR
     A2 --> A4[Event Emit]
   end
 
-  A3 -->|allow/deny/approve| A1
-  A4 --> Q[(Event Bus)]
+  A3 -->|allow / deny / approve| A1
+  A4 --> Q[Event Bus]
   Q  --> I[Ingest API]
-  I  --> S[(Append Store + Hash Chain)]
+  I  --> S[Append Store + Hash Chain]
   S  --> CP[Control Plane UI]
   CP --> EP[Evidence Packager]
-  CP --> SIEM[(SIEM / Alerts)]
-  CP --> APR[Approvals \(Slack/Teams\)]
+  CP --> SIEM[SIEM and Alerts]
+  CP --> APR[Approvals: Slack and Teams]
+
 
 ```
 
