@@ -68,20 +68,21 @@ TrailMix answers these questions and gives you a signed paper trail without slow
 
 ```mermaid
 flowchart LR
-  subgraph App/Agent
-    A1[Your Service]<-->A2[TrailMix SDK]
-    A2-->A3[Policy Check]
-    A2-->A4[Event Emit]
+  subgraph App_Agent
+    A1[Your Service] --> A2[TrailMix SDK]
+    A2 --> A3[Policy Check]
+    A2 --> A4[Event Emit]
   end
 
-  A3-- allow/deny/approve -->A1
-  A4-->Q[(Event Bus)]
-  Q-->I[Ingest API]
-  I-->S[(Append Store + Hash Chain)]
-  S-->CP[Control Plane UI]
-  CP-->EP[Evidence Packager]
-  CP-->SIEM[(SIEM/Alerts)]
-  CP-->APR[Approvals (Slack/Teams)]
+  A3 -->|allow/deny/approve| A1
+  A4 --> Q[(Event Bus)]
+  Q  --> I[Ingest API]
+  I  --> S[(Append Store + Hash Chain)]
+  S  --> CP[Control Plane UI]
+  CP --> EP[Evidence Packager]
+  CP --> SIEM[(SIEM / Alerts)]
+  CP --> APR[Approvals \(Slack/Teams\)]
+
 ```
 
 **Key parts**
